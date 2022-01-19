@@ -2,12 +2,6 @@
 
 - 🔭 Atualmente trabalho com front-end
 - 🌱 Sou estudante de Ciência da Computação
-<!-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ... !-->
 
 <div align="center">
   <a href="https://github.com/PedroSantosWEBDEV">
@@ -21,11 +15,11 @@
   <img align="center" alt="Pedro-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="Pedro-Node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg">
   <img align="center" alt="Pedro-Express" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"/>
-  <img align="center" alt="Pedro-Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg">  
-  <img align="center" alt="Pedro-Mysql" height="30" width="40" src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/mysql.svg">
+  <img align="center" alt="Pedro-Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg">   <img align="center" alt="Pedro-Mysql" height="30" width="40" src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/mysql.svg">
      
 </div>
-  <div>
-     ![Snake animation](https://github.com/PedroSantosWEBDEV/PedroSantos/blob/output/github-contribution-grid-snake.svg)
-
-  </div>
+ <div> 
+ 
+  ![Snake animation](https://github.com/PedroSantosWEBDEV/PedroSantosWEBDEV/blob/output/github-contribution-grid-snake.svg)
+ 
+</div>
