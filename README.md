@@ -1,6 +1,6 @@
 ### Oi meu nome Pedro Vinicius, sou programador junior! Apaixonado pelo desenvolvimento web! ✌️
 
-- 🔭 Atualmente trabalho com front-end
+- 🔭 Atualmente trabalho com full stack
 - 🌱 Sou estudante de Ciência da Computação
 
 <div align="center">
