@@ -27,6 +27,7 @@ jobs:
         with:
           force_with_lease: true
           branch: master
+          force: true
 
     # Repositorio que será utilizado para gerar os arquivos.
       - uses: Platane/snk@v3
