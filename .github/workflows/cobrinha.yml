@@ -36,10 +36,9 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ env.TOKEN }}
+          github_token: ${{ secrets.PAT_TOKEN }}
           branch: ${{ github.ref }}
           force: true
-          ssh: true
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
