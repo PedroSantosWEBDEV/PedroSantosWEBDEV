@@ -19,14 +19,14 @@ jobs:
     # Checks repo under $GITHUB_WORKSHOP, so your job can access it
       - uses: actions/checkout@v3
         with:
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          persist-credentials: true
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
     # Para as atualizações.
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          ssh: true
-          branch: ${{ github.ref }}
+          force_with_lease: true
+          branch: master
 
     # Repositorio que será utilizado para gerar os arquivos.
       - uses: Platane/snk@v3
