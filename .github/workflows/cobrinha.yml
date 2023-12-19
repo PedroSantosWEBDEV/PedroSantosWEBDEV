@@ -21,14 +21,6 @@ jobs:
         with:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           persist-credentials: true
-      - name: Create local changes
-        run: |
-          ...
-      - name: Commit files
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git commit -a -m "Add changes"
     # Para as atualizações.
       - name: Push changes
         uses: ad-m/github-push-action@master
