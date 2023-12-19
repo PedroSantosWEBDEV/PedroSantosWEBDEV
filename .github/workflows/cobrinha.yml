@@ -18,6 +18,9 @@ jobs:
 
     # Checks repo under $GITHUB_WORKSHOP, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
     # Repositorio que será utilizado para gerar os arquivos.
       - uses: Platane/snk@v3
@@ -41,67 +44,16 @@ jobs:
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
       - run: git status
-
-      # Para as atualizações.
+    
+      - name: Commit files
+        run: |
+         git config --local user.email "github-actions[bot]@users.noreply.github.com"
+         git config --local user.name "github-actions[bot]"
+         git commit -a -m "Add changes"
       - name: Push changes
-      ME
-MIT license
-GitHub Action for GitHub Push
-The GitHub Actions for pushing to GitHub repository local changes authorizing using GitHub token.
-
-With ease:
-
-update new code placed in the repository, e.g. by running a linter on it,
-track changes in script results using Git as archive,
-publish page using GitHub-Pages,
-mirror changes to a separate repository.
-Usage
-Example Workflow file
-An example workflow to authenticate with GitHub Platform and to push the changes to a specified reference, e.g. an already available branch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-    - name: Create local changes
-      run: |
-        ...
-    - name: Commit files
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -a -m "Add changes"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
-An example workflow to use the branch parameter to push the changes to a specified branch e.g. a Pull Request branch:
-
-name: Example
-on: [pull_request, pull_request_target]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: ${{ github.head_ref }}
-        fetch-depth: 0
-    - name: Commit files
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -a -m "Add changes"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: ${{ github.head_ref }}
+        uses: ad-m/github-push-action@master
+        with:
+         branch: ${{ github.head_ref }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
