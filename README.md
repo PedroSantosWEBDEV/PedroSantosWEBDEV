@@ -2,7 +2,7 @@
 "Sou só um vírus, querendo escapar, dos programadores da vida", este é o lugar onde eu  me refúgio :rofl:
 
 - 🔭 &nbsp;Atualmente trabalho como desenvolvedor full stack :wink:
-- 🌱 Sou estudante de Ciência da Computação
+- 🌱 Sou Bacharel em Ciência da Computação
 - 💬 &nbsp;Pergunte-me sobre qualquer coisa relacionada a Javascript/PHP ou Extjs/React/Express
 
 <div align="center">
