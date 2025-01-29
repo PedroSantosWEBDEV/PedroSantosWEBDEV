@@ -3,7 +3,7 @@
 
 - 🔭 &nbsp;Atualmente trabalho como desenvolvedor full stack :wink:
 - 🌱 Sou Bacharel em Ciência da Computação
-- 💬 &nbsp;Pergunte-me sobre qualquer coisa relacionada a Javascript/PHP ou Extjs/React/Express
+- 💬 &nbsp;Pergunte-me sobre qualquer coisa relacionada a Javascript/PHP ou Extjs/React/Express/Vue
 
 <div align="center">
   <a href="https://github.com/PedroSantosWEBDEV">
